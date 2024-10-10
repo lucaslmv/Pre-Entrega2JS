@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background-color: #282c34;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav img {
+    height: 50px;
+    width: auto;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+form input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+form input[type="button"] {
+    background-color: #61dafb;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+a {
+    color: #61dafb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#contenedor-productos, #seccion-carro {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+#contenedor-productos div, #seccion-carro div {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#contenedor-productos div h3, #seccion-carro div h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#contenedor-productos div p, #seccion-carro div p {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #61dafb;
+    color: white;
+}
+
+button:hover {
+    background-color: #21a1f1;
+}
+
+button.btn-remove {
+    background-color: #e74c3c;
+}
+
+button.btn-remove:hover {
+    background-color: #c0392b;
+}
+
+
+#total {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: right;
+}
+
+#total h3 {
+    display: inline-block;
+    background-color: #61dafb;
+    padding: 10px;
+    border-radius: 5px;
+}
